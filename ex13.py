@@ -22,3 +22,10 @@ from sys import argv
 date = (2018, 1, 8) #这边存（2018， 01 ，08）有报错
 year, month, day = date
 print(year, month, day)
+
+set1 = {'name': 'feixcmeng'}
+set2 = {'name': 'admin'}
+
+#pythonic 的合并集合的方法
+print({**set1}['name'])
+print({**set2 , **set1})
